@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: daraja-b2c
+
+server:
+  port: 8080
+
+mpesa:
+  daraja:
+    consumerKey: RW2AbhfSPdnOgHVbvlPsvvYXUb1LKiayVQe3iWbLUsB1gA49
+    consumerSecret: tfVylRM5RMp4i2nZhqnNQzP2imn3RALJfAXLKBPktzvRpZmT30BWnAaCZnkLjjpc
+    grant-type: client_credentials
+    oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate
