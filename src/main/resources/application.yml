@@ -5,9 +5,22 @@ spring:
 server:
   port: 8080
 
+data:
+  mongodb:
+    uri: mongodb://yourUsername:yourPassword@localhost:27017/spring_boot_kafka_mongo
+
+kafka:
+  bootstrap-servers: localhost:9092
+  consumer:
+    group-id: b2c-group
+    auto-offset-reset: earliest
+
 mpesa:
   daraja:
     consumerKey: RW2AbhfSPdnOgHVbvlPsvvYXUb1LKiayVQe3iWbLUsB1gA49
     consumerSecret: tfVylRM5RMp4i2nZhqnNQzP2imn3RALJfAXLKBPktzvRpZmT30BWnAaCZnkLjjpc
     grant-type: client_credentials
     oauth-endpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate
+
+
+
